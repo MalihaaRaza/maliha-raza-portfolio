@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Developer Portfolio</title>
+<meta name="description" content="Web/software developer portfolio and build log.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="nav-logo">your_name<span class="dot">.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Build Log</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<header class="hero" id="top">
+  <div class="hero-block" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-content">
+      <span class="eyebrow">Available for freelance work</span>
+      <h1>I build <span class="accent">web apps</span> and I'm learning to ship <span class="accent">AI/ML</span> tools.</h1>
+      <p class="lede">Software developer documenting every project as I build it. This page updates the day something ships — no portfolio-redesign required.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">See the build log →</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     ABOUT — SECTION TEMPLATE: copy this <section> block, change
+     the id, index number, and heading to add a new section.
+     ============================================================ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>About</h2>
+      <span class="index">§ 01</span>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Replace this with two or three sentences about who you are, what kind of problems you like solving, and who you build for. Keep it plain and specific — a client should be able to tell in ten seconds whether you're a fit.</p>
+        <p>Add a second paragraph on how you work, or what's next for you (e.g. moving into AI/ML) if that's relevant to who's reading this.</p>
+      </div>
+      <div class="about-skills">
+        <div class="skill-group">
+          <h3>Core</h3>
+          <div class="pill-row">
+            <span class="pill">JavaScript</span>
+            <span class="pill">React</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Learning / expanding into</h3>
+          <div class="pill-row">
+            <span class="pill">Python</span>
+            <span class="pill">PyTorch</span>
+            <span class="pill">LLM APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS / BUILD LOG — do not hand-edit the cards below.
+     They render from js/projects.js. Edit that file instead.
+     ============================================================ -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Build Log</h2>
+      <span class="index">§ 02</span>
+    </div>
+    <div class="filter-row" id="filter-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web / Software</button>
+      <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+    </div>
+    <div class="log" id="log"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT — SECTION TEMPLATE (copy pattern above for new sections)
+     ============================================================ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Get in touch</h2>
+      <span class="index">§ 03</span>
+    </div>
+    <div class="contact-inner">
+      <p style="max-width:420px;color:var(--muted);margin:0;">Open to freelance web/software projects, and always happy to talk about AI/ML builds in progress.</p>
+      <div class="contact-links">
+        <a href="mailto:you@example.com">Email</a>
+        <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <p class="footer-note">Built and maintained as a running log — last shipped project shown first.</p>
+  </div>
+</section>
+
+<script src="js/projects.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
