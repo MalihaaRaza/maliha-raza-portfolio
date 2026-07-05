@@ -68,18 +68,12 @@ then visit `http://localhost:8080`.
 
 ## Deploying to GitHub Pages (free)
 
-1. Create a new GitHub repo, e.g. `your-username.github.io` (using this exact name gives you a root URL) — or any repo name if you don't mind a `/repo-name` path.
-2. Push these files to it:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/your-username/your-repo.git
-   git push -u origin main
-   ```
-3. In the repo on GitHub: **Settings → Pages → Source → Deploy from branch → main → / (root) → Save**.
-4. Your site goes live at `https://your-username.github.io` (or `.../your-repo` if you used a different repo name), usually within a minute or two.
+This repo is already pushed to `github.com/MalihaaRaza/maliha-raza-portfolio` on the `master` branch, so hosting it just takes a settings change:
+
+1. On GitHub, go to the repo → **Settings → Pages**.
+2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+3. Branch: **`master`**, folder: **`/ (root)`** → **Save**.
+4. The site goes live at `https://malihaaraza.github.io/maliha-raza-portfolio/`, usually within a minute or two.
 5. From then on: adding a project is `edit js/projects.js → git add . → git commit -m "add project" → git push` — the live site updates automatically.
 
 ## Posting to LinkedIn
